@@ -1,0 +1,126 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    
+    <title>FruitChoi Restaurant | Fresh Food & Fruit Drinks</title>
+    <link rel="icon" type="image/png" href="images/favicon.png">
+
+    <meta name="description"
+        content="Explore FruitChoi's fresh fruit salads,
+        refreshing orange juice, and delicious meals.
+        Discover our menu and enjoy fresh flavours.">
+
+    <meta name="robots" content="index, follow">
+
+    <meta property="og:title"
+        content="FruitChoi Restaurant | Fresh Food & Fruit Drinks">
+
+    <meta property="og:description"
+        content="Discover fresh food, fruit salads, and refreshing
+        drinks at FruitChoi Restaurant.">
+
+    <meta property="og:type" content="website">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Website Navigation -->
+    
+<header>
+    <nav class="navbar">
+
+        <!-- Website Logo and Name -->
+       <a href="#home" class="brand">
+            <img src="images/favicon.png" alt="FruitChoi logo">
+            <span>FruitChoi</span>
+        </a>
+
+        <!-- Navigation Links -->
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#menu">Our Menu</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+
+        <button id="orderButton">Order Now</button>
+
+    </nav>
+</header>
+
+
+    <main>
+        <!-- Homepage Hero Section -->
+        <section id="home">
+            <h1>Fresh Flavours, Happy Moments</h1>
+
+            <p>
+                Welcome to FruitChoi Restaurant, where fresh ingredients,
+                delicious meals, and refreshing fruit drinks come together.
+            </p>
+
+            <a href="#menu">Explore Our Menu</a>
+            <div class="menu-filters">
+                 <button class="filter-button active" data-category="all">All</button>
+                 <button class="filter-button" data-category="food">Food</button>
+                <button class="filter-button" data-category="drink">Drinks</button>
+            </div>
+
+            <img
+                src="images/resturant.png"
+                alt="Fresh food and colourful fruit drinks at FruitChoi Restaurant">
+        </section>
+
+        <!-- About Section -->
+        <section id="about">
+            <h2>About FruitChoi Restaurant</h2>
+
+            <p>
+                We serve delicious food and refreshing drinks in a friendly
+                atmosphere. Our goal is to make every visit enjoyable.
+            </p>
+        </section>
+
+        <!-- Menu Section -->
+        <section id="menu">
+            <h2>Explore Our Fresh Menu</h2>
+
+            <article data-category="food">
+                <h3>Fresh Fruit Salad</h3>
+                <p>A colourful mix of fresh seasonal fruits.</p>
+                <p>Price: Rs. 350</p>
+            </article>
+
+            <article data-category="drink">
+                <h3>Fresh Orange Juice</h3>
+                <p>A refreshing drink made with oranges.</p>
+                <p>Price: Rs. 250</p>
+            </article>
+
+            <article data-category="food">
+                <h3>Classic Chicken Sandwich</h3>
+                <p>A tasty sandwich prepared with fresh ingredients.</p>
+                <p>Price: Rs. 450</p>
+            </article>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact">
+            <h2>Contact FruitChoi</h2>
+            <p>Visit us for fresh flavours and a welcoming experience.</p>
+            <a href="mailto:hello@fruitchoi.example">Email Us</a>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 FruitChoi Restaurant. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

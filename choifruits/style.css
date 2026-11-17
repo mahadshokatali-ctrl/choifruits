@@ -1,0 +1,249 @@
+
+/* 1. Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    color: #444444;
+    line-height: 1.7;
+}
+
+:root {
+    --orange: #f4a261;
+    --light-orange: #fff1e5;
+    --white: #ffffff;
+    --grey: #666666;
+    --dark-grey: #333333;
+}
+
+/* 2. Navigation Bar */
+header {
+    background-color: var(--white);
+    padding: 18px 7%;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+/* Logo and Website Name */
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 28px;
+    font-weight: bold;
+    color: var(--orange);
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+.brand img {
+    width: 48px;
+    height: 48px;
+    object-fit: contain;
+    border-radius: 8px;
+}
+
+/* Navigation Links */
+nav ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 25px;
+}
+
+nav ul a {
+    text-decoration: none;
+    color: var(--dark-grey);
+    font-weight: bold;
+}
+
+nav ul a:hover {
+    color: var(--orange);
+}
+
+/* Buttons */
+button,
+#home > a {
+    background-color: var(--orange);
+    color: var(--white);
+    padding: 12px 22px;
+    border: none;
+    border-radius: 6px;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 15px;
+    display: inline-block;
+}
+
+button:hover,
+#home > a:hover {
+    background-color: #df8743;
+}
+
+/* 3. Homepage Hero Section */
+#home {
+    background-color: var(--light-orange);
+    padding: 80px 7%;
+    text-align: center;
+}
+
+#home h1 {
+    font-size: 44px;
+    color: var(--dark-grey);
+    margin-bottom: 18px;
+}
+
+#home p {
+    max-width: 650px;
+    margin: 0 auto 25px;
+    color: var(--grey);
+}
+
+#home img {
+    display: block;
+    width: 100%;
+    max-width: 650px;
+    height: 300px;
+    object-fit: cover;
+    margin: 35px auto 0;
+    border-radius: 14px;
+}
+
+/* 4. General Section Styles */
+section:not(#home) {
+    padding: 65px 7%;
+    text-align: center;
+}
+
+section h2 {
+    font-size: 32px;
+    color: var(--dark-grey);
+    margin-bottom: 20px;
+}
+
+#about p,
+#contact p {
+    max-width: 700px;
+    margin: 0 auto 15px;
+}
+
+/* 5. Restaurant Menu */
+#menu {
+    background-color: #f7f7f7;
+}
+
+#menu article {
+    display: inline-block;
+    vertical-align: top;
+    width: 30%;
+    min-width: 220px;
+    margin: 10px;
+    padding: 25px 20px;
+    background-color: var(--white);
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.07);
+}
+
+#menu article h3 {
+    color: #df8743;
+    margin-bottom: 12px;
+}
+
+#menu article p {
+    margin-bottom: 8px;
+}
+
+/* 6. Contact Section */
+#contact {
+    background-color: var(--light-orange);
+}
+
+#contact a {
+    color: #a65320;
+}
+
+/* 7. Footer */
+footer {
+    background-color: var(--dark-grey);
+    color: var(--white);
+    text-align: center;
+    padding: 22px;
+}
+
+/* 8. Menu Filters */
+.menu-filters {
+    margin-bottom: 25px;
+}
+
+.menu-filters button {
+    margin: 5px;
+}
+
+.menu-filters button.active {
+    background-color: var(--dark-grey);
+}
+
+.menu-filters button:hover {
+    opacity: 0.85;
+}
+
+/* 9. Responsive Navigation */
+@media (max-width: 900px) {
+    header {
+        padding: 15px 4%;
+    }
+
+    nav {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .brand {
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 600px) {
+    #home h1 {
+        font-size: 32px;
+    }
+
+    section h2 {
+        font-size: 26px;
+    }
+
+    nav ul {
+        gap: 12px;
+    }
+
+    nav ul a {
+        font-size: 14px;
+    }
+
+    #menu article {
+        width: 100%;
+        min-width: 0;
+        margin: 10px 0;
+    }
+}
